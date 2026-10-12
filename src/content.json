@@ -15,12 +15,12 @@
         "Active Response"
       ],
       "desc": {
-        "fr": "Centraliser les journaux, détecter les incidents et valider la réponse automatisée.",
-        "en": "Centralise logs, detect incidents and validate automated response."
+        "fr": "J’ai mis en place un laboratoire Wazuh pour centraliser les journaux et tester la détection et la réponse aux incidents.",
+        "en": "I set up a Wazuh lab to collect logs and test incident detection and response."
       },
       "details": {
         "fr": "Stage PFA d’un mois et demi à la Direction provinciale de la Justice de Rabat, en 2026. Déploiement d’un laboratoire isolé de cinq machines virtuelles : Wazuh, Suricata, Linux/DVWA, Windows et Kali.\n\nCinq scénarios testés : force brute SSH et RDP, scan Nmap, injection SQL et XSS. Quatre réponses automatisées validées ; Nmap reste limité à la détection.\n\nLe dépôt présente l’étude de cas et des captures réelles du rapport. Ces observations concernent le laboratoire, sans garantie de performance en production.",
-        "en": "A six-week PFA internship at the Provincial Directorate of Justice in Rabat in 2026. Deployment of an isolated five-VM lab: Wazuh, Suricata, Linux/DVWA, Windows and Kali.\n\nFive scenarios tested: SSH and RDP brute force, Nmap scanning, SQL injection and XSS. Four automated responses validated; Nmap is detection-only.\n\nThe repository contains the case study and real report screenshots. These observations apply to the lab, not guaranteed production performance."
+        "en": "A six week PFA internship at the Provincial Directorate of Justice in Rabat in 2026. Deployment of an isolated five virtual machine lab: Wazuh, Suricata, Linux/DVWA, Windows and Kali.\n\nFive scenarios tested: SSH and RDP brute force, Nmap scanning, SQL injection and XSS. Four automated responses validated; Nmap is limited to detection.\n\nThe repository contains the case study and real report screenshots. These observations apply to the lab, not guaranteed production performance."
       },
       "highlights": [
         "wazuh",
@@ -49,7 +49,7 @@
         },
         {
           "fr": "Réponse : quatre réponses automatisées validées. Le scan Nmap est limité à la détection.",
-          "en": "Response: four automated responses validated. Nmap scanning is detection-only."
+          "en": "Response: four automated responses validated. Nmap scanning is limited to detection."
         }
       ]
     },
@@ -70,8 +70,8 @@
         "GHCR"
       ],
       "desc": {
-        "fr": "Sécuriser la livraison d’une application Django, du code à l’image Docker.",
-        "en": "Secure the delivery of a Django application, from source code to Docker image."
+        "fr": "Avec Walid Salhi, nous avons ajouté des contrôles de sécurité à la livraison d’une application Django.",
+        "en": "Walid Salhi and I added security checks to the delivery of a Django application."
       },
       "details": {
         "fr": "Réalisé en binôme avec Walid Salhi. Le pipeline automatise la recherche de secrets, l’analyse du code et de l’infrastructure, puis le contrôle des vulnérabilités de l’image Docker.\n\nLes vulnérabilités HIGH/CRITICAL non corrigées bloquent la publication sur GHCR. Les manifestes Kubernetes et les politiques Kyverno préparent l’exécution ; le workflow ne réalise pas de déploiement automatique.\n\nCe dépôt contient également l’application de gestion du matériel présentée dans ce portfolio.",
@@ -116,8 +116,8 @@
         "JavaScript"
       ],
       "desc": {
-        "fr": "Une application interne pour organiser les équipements, les demandes et les stocks.",
-        "en": "An internal application for equipment, requests and inventory."
+        "fr": "Une application Django développée avec Walid Salhi pour gérer les équipements, les demandes et les stocks.",
+        "en": "A Django application built with Walid Salhi to manage equipment, requests and inventory."
       },
       "details": {
         "fr": "Application Django réalisée avec Walid Salhi pendant le stage Huawei à Rabat en 2025 : catalogue, demandes de matériel, validation et suivi des stocks. Le code partage le dépôt du pipeline DevSecOps.",
@@ -150,12 +150,12 @@
         "JavaScript"
       ],
       "desc": {
-        "fr": "Relier réservation, commande et facturation dans une application métier.",
-        "en": "Connect reservations, orders and billing in a business application."
+        "fr": "Avec Hamza Moubtassim, nous avons développé une application Django pour gérer les réservations, les commandes et la facturation.",
+        "en": "Hamza Moubtassim and I developed a Django application for reservations, orders and billing."
       },
       "details": {
         "fr": "Projet de fin d’année réalisé avec Hamza Moubtassim : réservations, commandes et facturation avec Django. Le code et l’installation locale sont disponibles sur GitHub ; le README précise les écrans restant à compléter.",
-        "en": "End-of-year project built with Hamza Moubtassim: reservations, orders and billing with Django. Code and local setup instructions are on GitHub; the README lists screens still to be completed."
+        "en": "Final year project built with Hamza Moubtassim: reservations, orders and billing with Django. Code and local setup instructions are on GitHub; the README lists screens still to be completed."
       },
       "highlights": [
         "python",
@@ -184,12 +184,12 @@
         "UML"
       ],
       "desc": {
-        "fr": "Une architecture Java modulaire pour les opérations d’un cabinet dentaire.",
-        "en": "A modular Java architecture for dental practice operations."
+        "fr": "Un projet réalisé en équipe pour gérer un cabinet dentaire avec Java et MySQL.",
+        "en": "A team project to manage a dental practice using Java and MySQL."
       },
       "details": {
-        "fr": "Projet d’équipe à l’EMSI en Java natif : services métier et dépôts de données avec JDBC et MySQL. La répartition individuelle des modules n’est pas précisée. Aucun dépôt public ni démonstration exécutable disponible.",
-        "en": "Team project at EMSI using plain Java: business services and data repositories with JDBC and MySQL. Individual module ownership is not specified. No public repository or runnable demo is available."
+        "fr": "Nous avons réalisé ce projet à l’EMSI en Java natif, avec des services métier et des dépôts de données utilisant JDBC et MySQL. Le code n’est pas encore publié.",
+        "en": "We built this project at EMSI in plain Java, with business services and data repositories using JDBC and MySQL. The code is not yet published."
       },
       "highlights": [
         "openjdk",
@@ -205,8 +205,8 @@
     {
       "num": "06",
       "name": {
-        "fr": "Plateforme e-learning",
-        "en": "E-learning platform"
+        "fr": "Plateforme de formation en ligne",
+        "en": "Online learning platform"
       },
       "stack": [
         "C#",
@@ -217,8 +217,8 @@
         "SQL Server"
       ],
       "desc": {
-        "fr": "Publier des cours, gérer les inscriptions et suivre la progression des apprenants.",
-        "en": "Publish courses, manage enrolments and track learner progress."
+        "fr": "Une plateforme en C# pour consulter des cours, gérer les inscriptions et suivre la progression des apprenants.",
+        "en": "A platform built in C# to access courses, manage enrolments and track learner progress."
       },
       "details": {
         "fr": "Application C# / ASP.NET Core MVC : cours, inscriptions et progression, avec rôles étudiant, formateur et administrateur. Identity gère les comptes ; Entity Framework Core accède à SQL Server. L’interface des quiz reste à compléter.",
