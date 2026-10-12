@@ -57,3 +57,23 @@ body{cursor:default}a[href],button:not(:disabled),summary,[role="button"]{cursor
  .development-projects .project-secondary{padding:28px 0}
  .project-secondary h3{font-size:29px}
 }
+
+/* Compact mobile introduction, with clear space below the animated scene. */
+@media(max-width:800px){
+ .hero{min-height:0;padding-top:362px;padding-bottom:95px}
+ .space-scene .hero-art{top:82px;right:2.5%;width:100%;height:260px}
+ .hero .eyebrow{font-size:8px;line-height:1.8;letter-spacing:1.35px;color:#f5d391;margin-bottom:18px}
+ .hero h1{font-size:clamp(52px,12vw,76px);line-height:1;letter-spacing:-.05em;margin-bottom:20px}
+ .hero .hero-intro{font-size:16px;line-height:1.5}
+ .hero .hero-subline{font-size:13px;line-height:1.6;margin-top:12px}
+ .hero-actions{margin-top:23px;gap:10px}
+ .hero-actions .button{min-height:48px;padding:12px 16px;gap:14px}
+ .hero-bottom{bottom:28px}
+}
+@media(max-width:380px){
+ .hero{padding-top:322px}
+ .space-scene .hero-art{top:82px;height:220px}
+ .hero .eyebrow{font-size:7px;letter-spacing:1px}
+ .hero .hero-intro{font-size:14px}
+ .hero-actions .button{font-size:11px;padding:12px 13px;gap:10px}
+}
