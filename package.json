@@ -1,0 +1,15 @@
+{
+  "name": "zakaria-portfolio-personnel",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "build": "python3 scripts/build.py && esbuild src/black-hole.js --bundle --format=iife --minify --outfile=js/black-hole.js --legal-comments=linked --loader:.png=dataurl",
+    "preview": "node scripts/preview.mjs"
+  },
+  "dependencies": {
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.10"
+  }
+}

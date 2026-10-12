@@ -1,0 +1,421 @@
+{
+  "projects": [
+    {
+      "num": "01",
+      "name": {
+        "fr": "SIEM Wazuh",
+        "en": "Wazuh SIEM"
+      },
+      "stack": [
+        "Wazuh",
+        "Suricata",
+        "Linux",
+        "Windows",
+        "VirtualBox",
+        "Active Response"
+      ],
+      "desc": {
+        "fr": "Centraliser les journaux, détecter les incidents et valider la réponse automatisée.",
+        "en": "Centralise logs, detect incidents and validate automated response."
+      },
+      "details": {
+        "fr": "Stage PFA d’un mois et demi à la Direction provinciale de la Justice de Rabat, en 2026. Déploiement d’un laboratoire isolé de cinq machines virtuelles : Wazuh, Suricata, Linux/DVWA, Windows et Kali.\n\nCinq scénarios testés : force brute SSH et RDP, scan Nmap, injection SQL et XSS. Quatre réponses automatisées validées ; Nmap reste limité à la détection.\n\nLe dépôt présente l’étude de cas et des captures réelles du rapport. Ces observations concernent le laboratoire, sans garantie de performance en production.",
+        "en": "A six-week PFA internship at the Provincial Directorate of Justice in Rabat in 2026. Deployment of an isolated five-VM lab: Wazuh, Suricata, Linux/DVWA, Windows and Kali.\n\nFive scenarios tested: SSH and RDP brute force, Nmap scanning, SQL injection and XSS. Four automated responses validated; Nmap is detection-only.\n\nThe repository contains the case study and real report screenshots. These observations apply to the lab, not guaranteed production performance."
+      },
+      "highlights": [
+        "wazuh",
+        "linux"
+      ],
+      "align": "right",
+      "section": "project2",
+      "github": "https://github.com/Zakaria-Boukhris/wazuh-siem-lab",
+      "media": [
+        "/projects/wazuh/agents-actifs.png",
+        "/projects/wazuh/detection-sqli.png",
+        "/projects/wazuh/configuration-active-response.png"
+      ],
+      "badge": {
+        "fr": "Stage PFA · 2026",
+        "en": "PFA internship · 2026"
+      },
+      "evidence": [
+        {
+          "fr": "Architecture : cinq machines virtuelles dans un laboratoire isolé, avec collecte des événements Linux, Windows et Suricata.",
+          "en": "Architecture: five virtual machines in an isolated lab, collecting Linux, Windows and Suricata events."
+        },
+        {
+          "fr": "Détection : force brute SSH et RDP, scan Nmap, injection SQL et XSS.",
+          "en": "Detection: SSH and RDP brute force, Nmap scanning, SQL injection and XSS."
+        },
+        {
+          "fr": "Réponse : quatre réponses automatisées validées. Le scan Nmap est limité à la détection.",
+          "en": "Response: four automated responses validated. Nmap scanning is detection-only."
+        }
+      ]
+    },
+    {
+      "num": "02",
+      "name": {
+        "fr": "Pipeline DevSecOps",
+        "en": "DevSecOps pipeline"
+      },
+      "stack": [
+        "GitHub Actions",
+        "Docker",
+        "Gitleaks",
+        "Semgrep",
+        "Bandit",
+        "Checkov",
+        "Trivy",
+        "GHCR"
+      ],
+      "desc": {
+        "fr": "Sécuriser la livraison d’une application Django, du code à l’image Docker.",
+        "en": "Secure the delivery of a Django application, from source code to Docker image."
+      },
+      "details": {
+        "fr": "Réalisé en binôme avec Walid Salhi. Le pipeline automatise la recherche de secrets, l’analyse du code et de l’infrastructure, puis le contrôle des vulnérabilités de l’image Docker.\n\nLes vulnérabilités HIGH/CRITICAL non corrigées bloquent la publication sur GHCR. Les manifestes Kubernetes et les politiques Kyverno préparent l’exécution ; le workflow ne réalise pas de déploiement automatique.\n\nCe dépôt contient également l’application de gestion du matériel présentée dans ce portfolio.",
+        "en": "Built with Walid Salhi. The pipeline automates secret scanning, source and infrastructure analysis, and vulnerability checks on the Docker image.\n\nUnfixed HIGH/CRITICAL vulnerabilities block publishing to GHCR. Kubernetes manifests and Kyverno policies prepare execution; the workflow does not automatically deploy the application.\n\nThe repository also contains the equipment management application featured in this portfolio."
+      },
+      "highlights": [
+        "githubactions",
+        "docker",
+        "git",
+        "python"
+      ],
+      "align": "left",
+      "section": "project1",
+      "github": "https://github.com/Zakaria-Boukhris/huawei-devsecops",
+      "badge": {
+        "fr": "Projet en binôme",
+        "en": "Team of two"
+      },
+      "evidence": [
+        {
+          "fr": "Contrôles : recherche de secrets, analyse du code et de l’infrastructure, puis scan de l’image Docker.",
+          "en": "Checks: secret scanning, code and infrastructure analysis, followed by Docker image scanning."
+        },
+        {
+          "fr": "Publication : les vulnérabilités HIGH/CRITICAL non corrigées bloquent l’envoi vers GHCR.",
+          "en": "Publishing: unfixed HIGH/CRITICAL vulnerabilities block delivery to GHCR."
+        }
+      ]
+    },
+    {
+      "num": "03",
+      "name": {
+        "fr": "Gestion du matériel",
+        "en": "Equipment management"
+      },
+      "stack": [
+        "Python",
+        "Django",
+        "SQLite",
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "desc": {
+        "fr": "Une application interne pour organiser les équipements, les demandes et les stocks.",
+        "en": "An internal application for equipment, requests and inventory."
+      },
+      "details": {
+        "fr": "Application Django réalisée avec Walid Salhi pendant le stage Huawei à Rabat en 2025 : catalogue, demandes de matériel, validation et suivi des stocks. Le code partage le dépôt du pipeline DevSecOps.",
+        "en": "Django application built with Walid Salhi during the 2025 Huawei internship in Rabat: catalogue, equipment requests, approvals and inventory tracking. The code shares the DevSecOps pipeline repository."
+      },
+      "highlights": [
+        "python",
+        "django",
+        "javascript"
+      ],
+      "align": "left",
+      "section": "project3",
+      "github": "https://github.com/Zakaria-Boukhris/huawei-devsecops",
+      "badge": {
+        "fr": "Stage Huawei · 2025",
+        "en": "Huawei internship · 2025"
+      }
+    },
+    {
+      "num": "04",
+      "name": {
+        "fr": "Gestion de restaurant",
+        "en": "Restaurant management"
+      },
+      "stack": [
+        "Python",
+        "Django",
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "desc": {
+        "fr": "Relier réservation, commande et facturation dans une application métier.",
+        "en": "Connect reservations, orders and billing in a business application."
+      },
+      "details": {
+        "fr": "Projet de fin d’année réalisé avec Hamza Moubtassim : réservations, commandes et facturation avec Django. Le code et l’installation locale sont disponibles sur GitHub ; le README précise les écrans restant à compléter.",
+        "en": "End-of-year project built with Hamza Moubtassim: reservations, orders and billing with Django. Code and local setup instructions are on GitHub; the README lists screens still to be completed."
+      },
+      "highlights": [
+        "python",
+        "django",
+        "javascript"
+      ],
+      "align": "right",
+      "section": "project4",
+      "badge": {
+        "fr": "PFA · Projet en binôme",
+        "en": "Academic project · Team of two"
+      },
+      "github": "https://github.com/Zakaria-Boukhris/gestion-restaurant-django"
+    },
+    {
+      "num": "05",
+      "name": {
+        "fr": "DentalTech",
+        "en": "DentalTech"
+      },
+      "stack": [
+        "Java",
+        "JDBC",
+        "MySQL",
+        "Lombok",
+        "UML"
+      ],
+      "desc": {
+        "fr": "Une architecture Java modulaire pour les opérations d’un cabinet dentaire.",
+        "en": "A modular Java architecture for dental practice operations."
+      },
+      "details": {
+        "fr": "Projet d’équipe à l’EMSI en Java natif : services métier et dépôts de données avec JDBC et MySQL. La répartition individuelle des modules n’est pas précisée. Aucun dépôt public ni démonstration exécutable disponible.",
+        "en": "Team project at EMSI using plain Java: business services and data repositories with JDBC and MySQL. Individual module ownership is not specified. No public repository or runnable demo is available."
+      },
+      "highlights": [
+        "openjdk",
+        "mysql"
+      ],
+      "align": "left",
+      "section": "project5",
+      "badge": {
+        "fr": "Projet d’équipe",
+        "en": "Team project"
+      }
+    },
+    {
+      "num": "06",
+      "name": {
+        "fr": "Plateforme e-learning",
+        "en": "E-learning platform"
+      },
+      "stack": [
+        "C#",
+        ".NET 8",
+        "ASP.NET Core MVC",
+        "Identity",
+        "Entity Framework Core",
+        "SQL Server"
+      ],
+      "desc": {
+        "fr": "Publier des cours, gérer les inscriptions et suivre la progression des apprenants.",
+        "en": "Publish courses, manage enrolments and track learner progress."
+      },
+      "details": {
+        "fr": "Application C# / ASP.NET Core MVC : cours, inscriptions et progression, avec rôles étudiant, formateur et administrateur. Identity gère les comptes ; Entity Framework Core accède à SQL Server. L’interface des quiz reste à compléter.",
+        "en": "C# / ASP.NET Core MVC application: courses, enrolment and progress, with student, instructor and administrator roles. Identity handles accounts; Entity Framework Core accesses SQL Server. The quiz interface is still incomplete."
+      },
+      "highlights": [
+        "dotnet",
+        "git"
+      ],
+      "align": "right",
+      "section": "project6",
+      "github": "https://github.com/Zakaria-Boukhris/Elearning.Web",
+      "badge": {
+        "fr": "Code disponible",
+        "en": "Source available"
+      }
+    }
+  ],
+  "experiences": [
+    {
+      "role": {
+        "fr": "Stagiaire en cybersécurité · PFA",
+        "en": "Cybersecurity intern · PFA"
+      },
+      "company": "Direction provinciale de la Justice",
+      "period": {
+        "fr": "2026 · 1 mois et demi",
+        "en": "2026 · 6 weeks"
+      },
+      "location": {
+        "fr": "Rabat, Maroc",
+        "en": "Rabat, Morocco"
+      },
+      "summary": {
+        "fr": "Déploiement d’une infrastructure SIEM et validation de réponses aux incidents dans un laboratoire isolé.",
+        "en": "Deployment of a SIEM infrastructure and validation of incident responses in an isolated lab."
+      },
+      "bullets": [
+        {
+          "fr": "Collecte et centralisation des événements Linux, Windows et Suricata avec Wazuh.",
+          "en": "Collection of Linux, Windows and Suricata events with Wazuh."
+        },
+        {
+          "fr": "Règles de détection et essais sur cinq scénarios de sécurité.",
+          "en": "Detection rules and testing across five security scenarios."
+        },
+        {
+          "fr": "Validation de quatre réponses automatisées et vérification des blocages.",
+          "en": "Validation of four automated responses and verification of blocking actions."
+        }
+      ],
+      "stack": [
+        "Wazuh",
+        "Suricata",
+        "Linux / Windows",
+        "VirtualBox"
+      ]
+    },
+    {
+      "role": {
+        "fr": "Stagiaire en développement logiciel",
+        "en": "Software development intern"
+      },
+      "company": "Huawei",
+      "period": {
+        "fr": "2025",
+        "en": "2025"
+      },
+      "location": {
+        "fr": "Rabat, Maroc",
+        "en": "Rabat, Morocco"
+      },
+      "summary": {
+        "fr": "Conception d’une application web interne de gestion du matériel, en binôme avec Walid Salhi.",
+        "en": "Design of an internal equipment management web application with Walid Salhi."
+      },
+      "bullets": [
+        {
+          "fr": "Analyse des besoins et modélisation des équipements, stocks et demandes.",
+          "en": "Requirements analysis and modelling of equipment, inventory and requests."
+        },
+        {
+          "fr": "Développement des espaces employé et administrateur avec Django.",
+          "en": "Development of employee and administrator areas with Django."
+        },
+        {
+          "fr": "Gestion des demandes, validation et suivi des stocks.",
+          "en": "Request handling, approvals and inventory tracking."
+        }
+      ],
+      "stack": [
+        "Python",
+        "Django",
+        "HTML / CSS",
+        "JavaScript"
+      ]
+    }
+  ],
+  "certificates": [
+    {
+      "key": "oracle-oci",
+      "label": "Oracle Cloud Infrastructure Certified Architect Associate",
+      "issuer": "Oracle University",
+      "datetime": "2026-09-03",
+      "platform": "Oracle",
+      "pdf": "certifs/oracle-cloud-infrastructure-architect-associate.pdf",
+      "filename": "oracle-cloud-infrastructure-architect-associate.pdf"
+    },
+    {
+      "key": "agile",
+      "label": "Agile Project Management",
+      "issuer": "Google",
+      "datetime": "2026-09-27",
+      "platform": "Coursera",
+      "pdf": "certifs/agile-project-management.pdf",
+      "filename": "agile-project-management.pdf"
+    },
+    {
+      "key": "python",
+      "label": "Python for Data Science, AI & Development",
+      "issuer": "IBM",
+      "datetime": "2026-09-27",
+      "platform": "Coursera",
+      "pdf": "certifs/python-data-science-ai-development.pdf",
+      "filename": "python-data-science-ai-development.pdf"
+    },
+    {
+      "key": "blockchain",
+      "label": "Fundamentals of Blockchain Architecture",
+      "issuer": "LearnQuest",
+      "datetime": "2026-04-28",
+      "platform": "Coursera",
+      "pdf": "certifs/fundamentals-blockchain-architecture.pdf",
+      "filename": "fundamentals-blockchain-architecture.pdf"
+    },
+    {
+      "key": "react",
+      "label": "React Basics",
+      "issuer": "Meta",
+      "datetime": "2025-12-31",
+      "platform": "Coursera",
+      "pdf": "certifs/react-basics.pdf",
+      "filename": "react-basics.pdf"
+    },
+    {
+      "key": "react-native",
+      "label": "React Native",
+      "issuer": "Meta",
+      "datetime": "2025-12-31",
+      "platform": "Coursera",
+      "pdf": "certifs/react-native.pdf",
+      "filename": "react-native.pdf"
+    },
+    {
+      "key": "software-engineering",
+      "label": "Software Engineering: Software Design and Project Management",
+      "issuer": "The Hong Kong University of Science and Technology",
+      "datetime": "2025-04-13",
+      "platform": "Coursera",
+      "pdf": "certifs/software-engineering-design-project-management.pdf",
+      "filename": "software-engineering-design-project-management.pdf"
+    },
+    {
+      "key": "recherche",
+      "label": "La recherche documentaire",
+      "issuer": "École Polytechnique",
+      "datetime": "2025-04-13",
+      "platform": "Coursera",
+      "pdf": "certifs/recherche-documentaire.pdf",
+      "filename": "recherche-documentaire.pdf"
+    },
+    {
+      "key": "unix",
+      "label": "The Unix Workbench",
+      "issuer": "Johns Hopkins University",
+      "datetime": "2024-12-15",
+      "platform": "Coursera",
+      "pdf": "certifs/unix-workbench.pdf",
+      "filename": "unix-workbench.pdf"
+    },
+    {
+      "key": "javascript",
+      "label": "Interactivity with JavaScript",
+      "issuer": "University of Michigan",
+      "datetime": "2024-12-15",
+      "platform": "Coursera",
+      "pdf": "certifs/interactivity-javascript.pdf",
+      "filename": "interactivity-javascript.pdf"
+    },
+    {
+      "key": "cpp",
+      "label": "Introduction à la programmation orientée objet (en C++)",
+      "issuer": "École Polytechnique Fédérale de Lausanne",
+      "datetime": "2024-12-15",
+      "platform": "Coursera",
+      "pdf": "certifs/introduction-programmation-objet-cpp.pdf",
+      "filename": "introduction-programmation-objet-cpp.pdf"
+    }
+  ]
+}
